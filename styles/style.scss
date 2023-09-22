@@ -1,0 +1,84 @@
+@import "defaults";
+@import "mixins";
+@import "variables";
+
+body {
+  @include flex-center;
+}
+
+.game-container {
+  margin-top: 2rem;
+  @include flex-center;
+  flex-direction: column;
+
+  h1 {
+    @include font-size-weight($large, $bold);
+    margin-bottom: 2.5rem;
+  }
+
+  .board-container {
+    @include set-grid(3, auto, 3, auto);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    gap: 0.2rem;
+    background-color: black;
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      font-size: $marker;
+      cursor: pointer;
+      background-color: white;
+
+    }
+  }
+
+  .play-again-button {
+    margin-top: 1.5rem;
+    text-decoration: none;
+    border: none;
+    padding: 0.75rem 2.5rem;
+    font-size: 1rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    }
+  }
+
+  .current-result-text {
+    margin-top: 3rem;
+    @include font-size-weight($medium, $bold);
+  }
+
+  // .result-container {
+  //   @include set-grid(4, 1fr, 2, 1fr);
+  //   text-align: center;
+
+  //   .games-played, .x-wins, .draws, .o-wins {
+  //     .text {
+  //       @include font-size-weight($small, $regular);
+  //     }
+
+  //     div {
+  //       padding: 0.25rem;
+  //     }
+  //   }
+
+  //   .current-result-text {
+  //     grid-column: 1 / 5;
+  //     @include flex-center;
+
+  //     font-size: $small;
+  //   }
+  // }
+}

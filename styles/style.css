@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cabin Sketch", cursive;
+}
+
+body {
+  height: 100dvh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.game-container h1 {
+  font-size: calc(4vw + 2rem);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.game-container .board-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  gap: 0.2rem;
+  background-color: black;
+}
+.game-container .board-container .cell {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: calc(2vw + 1.5rem);
+  cursor: pointer;
+  background-color: white;
+}
+.game-container .play-again-button {
+  margin-top: 1.5rem;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  background-color: black;
+  color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.game-container .play-again-button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.game-container .current-result-text {
+  margin-top: 3rem;
+  font-size: calc(1vw + 2rem);
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

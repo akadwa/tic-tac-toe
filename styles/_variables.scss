@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+// Font family
+$sketch-font: 'Cabin Sketch', cursive;
+
+// Font weight
+$regular: 400;
+$bold: 700;
+
+// Font size
+$large: calc(4vw + 2rem);     // large headers
+$medium: calc(1vw + 2rem);
+$small: calc(1vw + 1rem);
+
+$marker: calc(2vw + 1.5rem);

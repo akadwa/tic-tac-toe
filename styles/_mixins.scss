@@ -1,0 +1,16 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin set-grid($cols, $col-size, $rows, $row-size) {
+  display: grid;
+  grid-template-columns: repeat($cols, $col-size);
+  grid-template-rows: repeat($rows, $row-size);
+}
+
+@mixin font-size-weight($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
